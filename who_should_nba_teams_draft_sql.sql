@@ -1,3 +1,5 @@
+-- write more detailed comments
+
 -- update excel files 
 -- changing column names
 update who_should_nba_teams_draft.`copy of player(updated)`
