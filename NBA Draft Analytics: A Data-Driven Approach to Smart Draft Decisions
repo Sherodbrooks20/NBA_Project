@@ -3,71 +3,60 @@
 __NBA DRAFT ANALYSIS: DATA-DRIVEN DECISION-MAKING FOR SMARTER DRAFT PICKS__
 
 __OBJECTIVE__:
-The goal of this project is to evaluate past and present NBA player statistics to identify patterns that correlate with long-term success. By analyzing historical draft data, we can uncover insights that help teams maximize their draft selections, identifying not just top prospects but also hidden gems who outperform expectations.
+This project focuses on evaluating NBA player statistics, both past and present, to identify patterns that align with long-term success. The ultimate goal is to help teams get more value out of their draft picks by recognizing not only top-tier talent but also uncovering overlooked players who go on to outperform expectations.
 
 __DATA SOURCES & METHODOLOGY__:
-To conduct this analysis, I used a dataset from Kaggle containing NBA player demographic and performance metrics.
+I used a dataset from Kaggle that included player demographics and performance statistics.
 
 __Data Cleaning & Preprocessing__: 
-Excel & SQL were used to structure and clean the data.
+I cleaned and organized the data using Excel and SQL. This included removing duplicates, handling missing values, and formatting the dataset to prepare it for analysis.
 
-__Key Analytical Approaches__:
+__Key Analytical Approaches__
 
-__Statistical Analysis & Modeling__: Python (Pandas) was used for exploratory data analysis (EDA) and feature selection.
-__Exploratory Data Analysis (EDA)__: Understanding the distribution of key metrics like points per game (PPG), assists per game (APG), rebounds per game (RPG), and other key stats in relation to position, pick range, etc.
+__Exploratory Data Analysis (EDA)__: 
+With Python and Pandas, I explored key trends across metrics like points, assists, rebounds, and efficiency. I broke these trends down by player position, draft range, and other categories to understand deeper performance patterns.
+
 __Feature Selection & Performance Classification__: 
-- Used Z-score standardization to classify players into:
-- "Stars" (players who performed well above expectations)
-- "Busts" (draft picks who significantly underperformed)
-- "Overperformers" (players who exceeded expectations by draft position)
-- "Underperformers" (players who didn’t meet their projected impact)
+I standardized performance metrics using Z-scores to pinpoint outliers and classify players based on how they performed relative to expectations.
+I grouped players into categories including Stars, Busts, Overperformers, and Underperformers. This helped highlight which players delivered more than expected and which ones underachieved based on where they were drafted.
+
 __Comparative Analysis__: 
-- Pick Range Comparisons: Analyzed top 10, mid 1st round, late first round, and second round picks
-- Position-Based Performance: Compared guards, wings, and bigs to identify key statistical trends.
-- Height Analysis: Evaluated whether height plays a major role in NBA success.
-- College Teams vs. NBA Performance: Measured which college programs produce the most successful NBA players.
+I compared player performance by draft range, analyzing lottery picks against mid and late first-round selections as well as second-round picks.
+I also looked at performance by position to see how guards, wings, and bigs tend to differ statistically.
+Additional analysis included evaluating the role of height and identifying which college programs tend to produce more successful NBA talent.
 
 __Performance Classification Using Z-Scores__:
-- Standardized key statistics using Z-scores to categorize overperformers, underperformers, stars, and busts.
-- Analyzed which players exceeded expectations in critical areas (e.g., scoring, assists, efficiency) and which failed to meet expectations relative to their draft position.
+
+By applying Z-scores, I was able to create an objective way to evaluate how players performed in relation to their peers. Players with higher scores often emerged as unexpected standouts, while those with lower scores frequently failed to meet expectations.
+This added a layer of statistical confidence when evaluating draft performance.
+
 __Key Insights & Findings__:
-TOP PICKS GENERALLY HAVE HIGHER IMPACT, BUT LATE-ROUND STEALS EXIST
-- Z-score analysis confirmed that while top 10 picks are more likely to succeed, some of the biggest stars were selected outside the lottery.
-- Teams should expand their scouting focus beyond the lottery to find undervalued talent.
 
-POSITION-BASED PERFORMANCE TRENDS
-- Each position group excels in different statistical categories, confirming role-based trends:
+Top Picks Usually Deliver, But Valuable Late Picks Exist
+The analysis confirmed that top ten picks tend to have a strong impact in the league. However, some of the most successful players in recent history were drafted much later. This shows that smart scouting beyond the lottery can reveal high-potential talent.
 
-Guards:
-- Best at assists (APG) and steals (SPG)
-- Highest win shares (WS) and usage rate (USG%)
-- Most efficient in three-point shooting (3P%) and free-throw percentage (FT%)
+Position-Based Performance Patterns
+Guards often lead in assists, steals, usage rate, and shooting efficiency from the three-point line and free-throw line.
+Wings tend to be the highest scorers and are usually well-rounded across different statistical categories.
+Bigs dominate in rebounding, blocking, and efficiency metrics like field goal percentage, true shooting percentage, and player efficiency rating.
 
-Wings (Forwards):
-- Highest scoring averages (PPG)
-- Balanced stat distribution across multiple categories
-
-Bigs (Centers & Power Forwards):
-- Dominate rebounding (RPG) and blocking (BPG)
-- Highest field goal percentage (FG%) and true shooting percentage (TS%)
-- Top performers in Player Efficiency Rating (PER)
-- Z-SCORE REVEALED STARS & BUSTS BASED ON HISTORICAL EXPECTATIONS
-- Players who significantly exceeded their draft expectations (high Z-scores).
-- Players who underperformed relative to expectations (low Z-scores) include several lottery picks who failed to sustain high-level production.
+Z-Score-Based Player Categories
+By comparing players to standardized expectations, I was able to clearly see which players were overachieving and which ones didn’t live up to the hype. This approach helped identify both hidden gems and overvalued picks.
 
 __Practical Applications__:
-This analysis provides teams, scouts, and analysts with a data-driven framework for evaluating NBA prospects.
-Teams can use the Power BI dashboard to:
-- Explore historical draft trends
-- Compare draft classes and position-based performance
-- Refine scouting strategies based on real statistical data
+This project provides a framework for teams, scouts, and analysts to approach player evaluation using real data.
+Through Power BI dashboards, users can explore historical draft trends, compare draft classes, and analyze performance by position or pick number.
+The insights from this analysis can help refine scouting strategies and reduce risk in the draft process.
+
 __Next Steps & Future Enhancements__:
-To further enhance this project, I plan to:
-- Apply machine learning models to predict player success using college statistics and advanced scouting reports.
-- Incorporate advanced efficiency metrics, such as offensive rating, defensive impact scores, and lineup-based analytics.
-- Expand the dataset to include international leagues and G-League pathways, providing a broader talent assessment.
+Moving forward, I plan to build on this project by introducing machine learning models to predict NBA success based on college statistics and scouting inputs.
+I’d also like to bring in more advanced performance metrics, including offensive and defensive ratings, lineup-based analytics, and on/off-court splits.
+Expanding the dataset to include international and G-League prospects will help provide a more complete view of the modern talent pool.
 
 __Conclusion__:
-This project demonstrates how data analytics can revolutionize NBA draft decisions by identifying high-value prospects, uncovering hidden gems, and optimizing scouting strategies.
+This project set out to understand what makes an NBA player successful in the long run and how that ties back to where and how they were drafted.
+Through statistical analysis, performance classification, and visual storytelling, I was able to highlight clear trends and give valuable insights.
+Teams can use this framework to identify players with high upside, avoid common drafting pitfalls, and ultimately make better decisions that translate to long-term success on the court.
 
-By leveraging Z-score analysis, historical trends, predictive modeling, and interactive visualizations, NBA teams and analysts can make smarter, more informed draft selections—leading to greater long-term success on the court.
+
+
